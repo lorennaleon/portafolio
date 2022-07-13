@@ -76,12 +76,16 @@ img{
 }
 /*----------nav-----*/
 nav{
-    background:#1547ef;
+    background:transparent;
     width: 100vw;
     height: 5rem;
     position: fixed;
     top:0;
     z-index: 11;
+}
+.window-scroll{
+    background:#61608a;
+    box-shadow: 0 1rem 2rem rgba(0,0,0,0.3);  
 }
 .nav_container{
     height: 100%;
@@ -157,7 +161,7 @@ header{
     transition:var(--transition);
 }
 .proyecto:hover{
-   box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.3);
+   box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.2);
    z-index: 1;
 }
 .proyecto:nth-child(2) .proyecto_icon {
@@ -181,5 +185,68 @@ header{
     margin: 2rem 0 1rem;
 }
 .proyecto p{
-    font-size:
+    font-size:0.85;
+}
+/*-------PROYECTOS-----*/
+.courses{
+    background:pink;
+    color:black;
+    margin-top: 10rem;
+}
+.courses_container{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:2rem;
+}
+.course{
+    background:#1547ef;
+    text-align:center;
+    border:1px solid transparent;
+    transition: var(--transition);
+}
+.course:hover{
+background:transparent;
+border-color: #1547ef;
+}
+.course_info{
+padding:2rem;
+}
+.course_info p{
+    margin:1.2rem 0 2rem;
+    font-size: 0.9rem;
+}
+/*-------faqs-----*/
+.faqs{
+    background:#04044c;
+    box-shadow: inset 0  0 3rem rgba(0, 0, 0, 0.5);
+}
+.faqs_container{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap:1rem;
+}
+.faq{
+    padding:2rem;
+    display:flex;
+    align-items:center;
+    gap:1.4rem;
+    height:fit-content;
+    background:#1547ef;
+    cursor: pointer;
+}
+.faq h4{
+    font-size: 1rem;
+    line-height: 2.2;
+}
+.faq_icon{
+    align-self: flex-start;
+    font-size: 1.2rem;
+}
+
+.faq p{
+    margin-top: 0.8rem;
+    display: none; 
+}
+.faq.open p{
+    display:block;
 }
