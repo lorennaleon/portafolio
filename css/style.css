@@ -43,12 +43,36 @@ color:white;
     color:rgb(243, 52, 195);
 
 }
-.menu{
-    
+
+
+/*----------nav
+nav{
+    background:transparent;
+    width: 100vw;
+    height: 5rem;
+    position: fixed;
+    top:0;
+    z-index: 11;
+}
+.window-scroll{
+    background:#61608a;
+    box-shadow: 0 1rem 2rem rgba(0,0,0,0.3);  
+}
+.nav_container{
+    height: 100%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav button{
+    display: none;
+}
+.nav_menu{
+
     display: flex;
     width: 50%;
     justify-content: space-around;
-}
+} -----*/
 .menu li{
 list-style:none;
 }
@@ -109,6 +133,7 @@ span{
     width: 100vw;
     align-items:center;
 }
+
 .about img{
     width:100%;
     grid-column:1/5;
@@ -128,6 +153,7 @@ span{
     margin-top:5px;
     margin-bottom:2em;
 }
+
 .about p{
     
      margin-bottom:1em;
