@@ -8,89 +8,135 @@
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,900;1,700&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 </head>
 <body>
-    <nav>
-        <div class="container nav_container">
-            <a href="index.html"><h4>LORE<SPAN> LEHU</SPAN></h4></h4></a>
-            <ul class="nav_menu">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#aboutus">About</a></li>
-                <li><a href="#proyectos">Proyectos</a></li>
-                <li><a href="#contactame">Contacto</a></li>
-            </ul>
-            <button id="open-menu-btn"><ion-icon name="menu-outline"></ion-icon></button>
-            <button id="close-menu-btn"><ion-icon name="close-outline"></ion-icon></button>
-        </div>
-    </nav>
+  <div class="wrapper">
     <header>
-        <div id="home"class="container header_container">
-            <div class="header_left">
-             <p>Soy Lorenna Leon, desarrolladora web y amante de los gatos, si deseas ver o saber mas acerca de mis proyectos</p>
-             <a href="" class="btn btn-primary">CONTÁCTAME</a>
-            </div>
-            <div class="header_right">
-              <div class="header_right-image">
-                 <img src="./img/chica.jpg">
-
-              </div>
-            </div>
+      <nav class="navbar">
+        <div class="brand">
+          <h2>L<span> LEÓN</span></h2>
         </div>
+        <ul class="menu">
+          <li><a class="active"href="#">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#proyectos">Portafolio</a></li>
+          <li><a href="#contactame">Contacto</a></li>
+        </ul>
+      </nav>
     </header>
-    <section id="aboutus"class="aboutus">
-        
-    </section>
-    <section id="proyectos" class="proyectos">
-        <div class="container proyectos_container">
-           <div class="proyectos_left">
-            <h1>PROYECTOS</h1>
-            <p>
-              Aqui puedes ver algunos de mis proyectos, si tienes alguna duda, puedes contactarme.  
-            </p>
-            <a href="#" class="btn">Leer más</a>
-           </div>
-           <div class="proyectos_right">
-            <article class="proyecto">
-              <span class="proyecto_icon"><ion-icon name="star-outline"></ion-icon></span>
-              <h5>Proyecto 1</h5>
-              <p> EN ESTE PROYECTO......</p>
-            </article>
-            <article class="proyecto">
-                <span class="proyecto_icon"><ion-icon name="star-outline"></ion-icon></span>
-                <h5>Proyecto 2</h5>
-                <p> EN ESTE PROYECTO......</p>
-              </article>
-              <article class="proyecto">
-                <span class="proyecto_icon"><ion-icon name="star-outline"></ion-icon></span>
-                <h5>Proyecto 3</h5>
-                <p> EN ESTE PROYECTO......</p>
-              </article>
-              <article class="proyecto">
-                <span class="proyecto_icon"><ion-icon name="star-outline"></ion-icon></span>
-                <h5>Proyecto 4</h5>
-                <p> EN ESTE PROYECTO......</p>
-              </article>
-              <article class="proyecto">
-                <span class="proyecto_icon"><ion-icon name="star-outline"></ion-icon></span>
-                <h5>Proyecto 5</h5>
-                <p> EN ESTE PROYECTO......</p>
-              </article>
-              <article class="proyecto">
-                <span class="proyecto_icon"><ion-icon name="star-outline"></ion-icon></span>
-                <h5>Proyecto 6</h5>
-                <p> EN ESTE PROYECTO......</p>
-              </article>
-           </div>
+    <main class="main">
+      <div class="info-content">
+        <h1>Yo soy <span> Lorenna </span></h1>
+        <p>Soy desarrolladora web de interfaz de usuario, si deseas contactarme presiona el siguiente boton</p>
+        <a dowload href="#">
+         <button class="download-cv" download="">Contactarme</button> 
+        </a>
+      </div>
+      <img src="./img/foto1.png" alt="lorenna leon picture">
+    </main>
+  </div>
+  <div id="about"class="about">
+   <img src="./img/foto2.png" alt="lorena leon img">
+   <div class="about-info">
+     <h2> About me</h2>
+     <div class="divider"></div>
+       <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+      
+       <button class="download-cv" download="">Leer más</button>
+     </div>
+  </div>
+  <div id="portafolio" class="portfolio">
+    <div class="portfolio-headings">
+      <h2>Mi portafolio</h2>
+      <div class="divider"></div>
+    </div>
+    <div class="container">
+      <div class="card">
+        <div class="card_img">  
         </div>
-    </section>
-    <section class="aboutus">
+        <div class="card_title">
+          <h2>SISTEMA DE REGISTRO DE CITAS</h2>
+        </div>
+        <div class="card_project-links">
+          <a href="">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="">
+            <i class="fas fa-globe"></i>
+          </a>
+          <a href="">
+            <i class="fas fa-code"></i>
+          </a>
+        </div>
+        <div class="project-details-content">
+         <button class="project-details download-cv">
+          <a href="">
+            Detalles 
+          </a>  
+         </button>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card_img2">  
+        </div>
+        <div class="card_title">
+          <h2>VALIDACIÓN DE TARJETA</h2>
+        </div>
+        <div class="card_project-links">
+          <a href="">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="">
+            <i class="fas fa-globe"></i>
+          </a>
+          <a href="">
+            <i class="fas fa-code"></i>
+          </a>
+        </div>
+        <div class="project-details-content">
+         <button class="project-details download-cv">
+          <a href="">
+            Detalles 
+          </a>  
+         </button>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card_img3">  
+        </div>
+        <div class="card_title">
+          <h2>POKEMON LOVERS</h2>
+        </div>
+        <div class="card_project-links">
+          <a href="">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="">
+            <i class="fas fa-globe"></i>
+          </a>
+          <a href="">
+            <i class="fas fa-code"></i>
+          </a>
+        </div>
+        <div class="project-details-content">
+         <button class="project-details download-cv">
+          <a href="">
+            Detalles 
+          </a>  
+         </button>
+        </div>
+      </div>
 
-    </section>
-    <script src="./js/main.js"></script>
+    </div>
+    
+
+  </div>
 </body>
-</html
+
+</html>
