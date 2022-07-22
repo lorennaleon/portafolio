@@ -19,6 +19,7 @@ width:100vw;
 height:100vh;
 background-color:#191c32;
 color:white;
+
 }
 .navbar{
     display:flex;
@@ -33,10 +34,9 @@ color:white;
 
 }
 
-
-/*----------nav
 nav{
-    background:transparent;
+   
+    background:#191c32;
     width: 100vw;
     height: 5rem;
     position: fixed;
@@ -44,24 +44,10 @@ nav{
     z-index: 11;
 }
 .window-scroll{
-    background:#61608a;
+    background:#7978b3;
     box-shadow: 0 1rem 2rem rgba(0,0,0,0.3);  
 }
-.nav_container{
-    height: 100%;
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-}
-nav button{
-    display: none;
-}
-.nav_menu{
 
-    display: flex;
-    width: 50%;
-    justify-content: space-around;
-} -----*/
 .menu {
     display: flex;
     width: 50%;
@@ -115,10 +101,12 @@ span{
     box-shadow:none;
 }
 .main img{
+    margin-top: 5em;
     width:350px;
     border:7px solid rgb(243, 52, 195);
-    height:400px;
+    height:350px;
     z-index:1;
+   
 
 }
 
@@ -173,6 +161,7 @@ span{
     width: 80vw;
     height: 150vh;
     margin: 0 auto;
+
     
     justify-content: center;
     display:grid;
@@ -187,6 +176,7 @@ span{
     height:350px;
     background-color: #2a2f59;;
     margin:1em;
+   
 }
 .card_img{
     width:300px;
@@ -209,7 +199,7 @@ span{
 .card_img4{
     width:300px;
     height:150px;
-    background-image:url(../img/poke.png);
+    background-image:url(../img/porta.PNG);
     background-size:cover;
 }
 .card_img5{
@@ -302,6 +292,7 @@ gap:0;
 
 }
 .container-contact img{
+    
     margin-top: 1em;
     width:450px;
     height:480px;
