@@ -8,18 +8,7 @@
     box-sizing: border-box;
 
 }
-:root{
-   --color-one: #ffe0ff;
-   --color-two: #ffa8d9;
-   --color-three:#ff69b4;
-   --color-four:#c33b80;
-   --color-five: #89004f;
 
-    --container-width-lg: 76%;
-    --container-width-md: 90%;
-    --container-width-sm: 94%;
-
-}
 body {
     font-family:'Montserrat', sans-serif;
     overflow-x:hidden;
@@ -73,6 +62,11 @@ nav button{
     width: 50%;
     justify-content: space-around;
 } -----*/
+.menu {
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+}
 .menu li{
 list-style:none;
 }
@@ -81,9 +75,10 @@ list-style:none;
     text-decoration:none;
     padding:10px 20px;
 }
-.menu active{
+.menu .active{
     color:rgb(243, 52, 195);
 }
+
 .menu a:hover{
     color:rgb(243, 52, 195);
     transition:ease-in  .4s;
@@ -104,7 +99,7 @@ h1{
 span{
     color:rgb(243, 52, 195);
 }
-.download-cv{
+.download-cv, .project-details-button{
     padding:10px 20px;
     background-color:rgb(243, 52, 195);
     border:none;
@@ -162,8 +157,7 @@ span{
     background-color:#191c32;
     width: 100vw;
     padding:5em;
- 
-   
+    
 
 }
 .portfolio-headings{
@@ -177,10 +171,13 @@ span{
 }
 .portfolio .container{
     width: 80vw;
-    height: 80vh;
+    height: 150vh;
     margin: 0 auto;
-    display: flex;
+    
     justify-content: center;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
     
     
 }
@@ -200,13 +197,37 @@ span{
 .card_img2{
     width:300px;
     height:150px;
-    background-image:url(../img/tarjeta.png);
+    background-image:url(../img/disquete1.PNG);
     background-size:cover;
 }
 .card_img3{
     width:300px;
     height:150px;
+    background-image:url(../img/estudio.PNG);
+    background-size:cover;
+}
+.card_img4{
+    width:300px;
+    height:150px;
     background-image:url(../img/poke.png);
+    background-size:cover;
+}
+.card_img5{
+    width:300px;
+    height:150px;
+    background-image:url(../img/poke.png);
+    background-size:cover;
+}
+.card_img6{
+    width:300px;
+    height:150px;
+    background-image:url(../img/tarjeta.png);
+    background-size:cover;
+}
+.card_img7{
+    width:300px;
+    height:150px;
+    background-image:url(../img/agenda.PNG);
     background-size:cover;
 }
 .card_title{
@@ -242,4 +263,113 @@ span{
     width: 100%;
     justify-content:center;
     margin-top:1e;
+}
+.button-content{
+    display:flex;
+    justify-content:center;
+    margin:1em;
+}
+.project-details-button a{
+    text-decoration: none;
+    color:#191c32;
+    list-style:none;
+}  
+.contact-section{
+    background-color:#191c32;
+    padding:5em;
+    
+   
+}  
+.contact-headings{
+    margin-top:7em;
+    width: 100vw;
+    color:#fff;
+     padding: 5em;
+}
+.contact-headings h2{
+font-size: 1.5em;
+
+
+}
+.container-contact {
+ 
+ align-items:center;
+padding:3em;
+margin:0 auto;
+display:grid;
+grid-template-columns:repeat(2, 1fr);
+gap:0;
+
+}
+.container-contact img{
+    margin-top: 1em;
+    width:450px;
+    height:480px;
+    bottom:0px;
+    opacity:20%;
+
+}
+.form{
+display:flex;
+flex-direction:column;
+width:30vw;
+margin-top:2em;
+}
+.form input{
+    padding: 10px 20px;
+    margin-bottom: 1em;
+    background:none;
+    border:none;
+    border-bottom: 1px solid #fff;
+    color:#fff;
+}
+.form textarea{
+    height:150px;
+    background:none;
+    color:#fff;
+    padding:1.5em;
+    border: 1px solid #fff;
+    
+}
+.contact-form h4{
+    color:#fff;
+}
+.btn-submit{
+    padding:10px 20px;
+    margin:1em ;
+    border:none;
+    text-transform: uppercase;
+    background-color:rgb(243, 52, 195) ;
+    border-radius:20px;
+    cursor:pointer;
+    box-shadow:1px 3px 11px -5px rgba(102, 231, 200 , .69);
+}
+.btn-submit:hover{
+    background-color:#fff;
+    box-shadow: none;
+}
+.footer{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items: center;
+    width: 100vw;
+    height: 200px;
+    background-color:rgb(243, 52, 195);
+}
+.footer-content h2 {
+    font-size:3em;
+}
+.footer-content h5 {
+    font-size:1.5em;
+    text-align: center;
+}
+.sotial-network{
+    display:flex;
+    justify-content:space-between;
+    width:300px;
+    margin-top:1em;
+}
+.sotial-network i{
+    font-size:1.5em;
 }
