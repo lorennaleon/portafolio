@@ -52,17 +52,17 @@ const skillsContent = document.getElementsByClassName('skills_content'),
       })
 /*==================== QUALIFICATION TABS ====================*/
     const tabs = document.querySelectorAll('[data-target]'),
-    tabContent = document.querySelectorAll('[data-content]')
+    tabContents = document.querySelectorAll('[data-content]')
 
     tabs.forEach(tab =>{
         tab.addEventListener('click', () => {
             const target = document.querySelector(tab.dataset.target)
        
         
-           tabContent.forEach(tabContent =>{
+           tabContents.forEach(tabContent =>{
             tabContent.classList.remove('qualification_active')
            })
-           target.classList.add('qualification_Active')
+           target.classList.add('qualification_active')
 
            tabs.forEach(tab => {
             tabs.classList.remove('qualification_active')
