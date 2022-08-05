@@ -498,7 +498,7 @@
             <section class="portfolio section" id="portfolio">
                 <h2 class="section_title">Portafolio</h2>
                 <span class="section_subtitle">Trabajos recientes</span>
-                <div class="portfolio_container container swiper">
+                <div class="portfolio_container container swiper-container">
                     <div class="swiper-wrapper">
                         <!--==================== PORTFOLIO 1====================-->
                         <div class="portfolio_content grid swiper-slide">
@@ -550,16 +550,32 @@
                         </div>
                     </div>
                      <!-- Add Arrows -->
-                     <div class="swiper-button-next"></div>
-                     <div class="swiper-button-prev"></div>
+                     <div class="swiper-button-next">
+                     <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+                    </div>
+                     <div class="swiper-button-prev">
+                        <i class="uil uil-angle-left-b swiper-portfolio-icon"></i> 
+                    </div>
                      <!-- Add Pagination -->
-                     <div class="swiper-pagination"></div>                
+                     <div class="swiper-pagination"></div>   
+                                 
                     </div>
             </section>
 
             <!--==================== PROJECT IN MIND ====================-->
             <section class="project section">
-
+                <div class="project_bg">
+                    <div class="project_container container grid">
+                        <div class="project_data">
+                            <h2 class="project_title">Tienes algun proyecto en mente?</h2>
+                            <a href="#contact" class="button button--flex button--white">
+                                Contáctame
+                                <i class="uil uil-message project_icon button_icon"></i>
+                            </a>
+                        </div>
+                        ><img src="assets/img/foto1.png" alt="" class="project_img">
+                    </div>
+                </div>
             </section>
 
             <!--==================== TESTIMONIAL ====================-->
@@ -569,7 +585,64 @@
 
             <!--==================== CONTACT ME ====================-->
             <section class="contact section" id="contact">
-
+               <h2 class="section_title">Contactame</h2>
+               
+               <div class="contact_container container grid">
+                <div>
+                    <div class="contact_information">
+                        <i class="uil uil-phone contact_icon"></i>
+                    </div>
+                    <div>
+                        <h3 class="contact_title">Llamame</h3>
+                        <span class="contact_subtitle">952-084-971</span>
+                    </div>
+                </div>
+                <div>
+                    <div class="contact_information">
+                        <i class="uil uil-envelope contact_icon"></i>
+                    </div>
+                    <div>
+                        <h3 class="contact_title">E-mail</h3>
+                        <span class="contact_subtitle">lorelung2@gmail.com</span>
+                    </div>
+                </div>
+                <div>
+                    <div class="contact_information">
+                        <i class="uil uil-map-marker contact_icon"></i>
+                    </div>
+                    <div>
+                        <h3 class="contact_title">Ubicación</h3>
+                        <span class="contact_subtitle">Perú - Lima</span>
+                    </div>
+                    <form action="" class="contact_form grid">
+                        <div class="contact_inputs grid">
+                            <div class="contact_content">
+                                <label for="" class="contact_label">Nombre</label>
+                                <input type="text" class="contact_input">
+                            </div>
+                            <div class="contact_content">
+                                <label for="" class="contact_label">E-mail</label>
+                                <input type="email" class="contact_input">
+                            </div>
+                        </div>
+                        <div class="contact_content">
+                            <label for="" class="contact_label">Proyecto</label>
+                            <input type="text" class="contact_input">
+                        </div>
+                        <div class="contact_content">
+                            <label for="" class="contact_label">Mensaje</label>
+                            <textarea name="" id="" cols="0" rows="7" class="contact_input"></textarea> 
+                        </div>
+                        <div>
+                            <a href="#" class="button button--flex">
+                                Enviame un mensaje
+                                <i class="uil uil-message button_icon"></i>
+                            </a>
+                        </div>
+                    </form>
+                </div>
+               </div>
+           
             </section>
         </main>
 

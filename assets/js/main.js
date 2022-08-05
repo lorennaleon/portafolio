@@ -1,6 +1,6 @@
-import Swiper from 'swiper/swiper-bundle.esm.js';
+/*====================import Swiper from 'swiper/swiper-bundle.esm.js';
 import 'swiper/swiper-bundle.css';
-/*==================== MENU SHOW Y HIDDEN ====================*/
+ MENU SHOW Y HIDDEN ====================*/
 
 
 /*===== MENU SHOW =====*/
@@ -101,15 +101,16 @@ const skillsContent = document.getElementsByClassName('skills_content'),
 /*==================== PORTFOLIO SWIPER  ====================*/
 let swiper = new Swiper('.portfolio_container', {
     cssMode: true,
+    loop: true,
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
     pagination: {
-      el: '.swiper-pagination'
+      el: '.swiper-pagination',
+      clickable: true,
     },
-    mousewheel: true,
-    keyboard: true,
+  
   });
 
 /*==================== TESTIMONIAL ====================*/
