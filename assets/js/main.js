@@ -1,3 +1,5 @@
+import Swiper from 'swiper/swiper-bundle.esm.js';
+import 'swiper/swiper-bundle.css';
 /*==================== MENU SHOW Y HIDDEN ====================*/
 
 
@@ -97,7 +99,18 @@ const skillsContent = document.getElementsByClassName('skills_content'),
     })
 
 /*==================== PORTFOLIO SWIPER  ====================*/
-
+let swiper = new Swiper('.portfolio_container', {
+    cssMode: true,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    pagination: {
+      el: '.swiper-pagination'
+    },
+    mousewheel: true,
+    keyboard: true,
+  });
 
 /*==================== TESTIMONIAL ====================*/
 
