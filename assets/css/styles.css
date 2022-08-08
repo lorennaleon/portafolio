@@ -807,7 +807,7 @@ color: var(--first-color-lighter);
 
 /*==================== MEDIA QUERIES ====================*/
 /* For small devices */
-@media screen and (min-width :350px){
+@media screen and (max-width : 350px){
   .container{
     margin-left: var(--mb-1);
     margin-right: var(--mb-1);
@@ -822,12 +822,13 @@ color: var(--first-color-lighter);
     grid-template-columns: .25fr 3fr;
   }
   .home_blob{
-    width: 180px;  }
+    width: 180px;  
+  }
   
-    .skills_title{
+  .skills_title{
       font-size: var(--normal-font-size);
     }
-    .qualication_data{
+  .qualication_data{
       gap: .5rem;
     }
     .services_container{
@@ -859,7 +860,7 @@ color: var(--first-color-lighter);
   }
   
   /* For medium devices */
-  @media   screen and (max-width:568px){
+  @media screen and (min-width: 568px){
     .home_content{
       grid-template-columns: max-content 1fr 1fr;
     }
@@ -876,7 +877,7 @@ color: var(--first-color-lighter);
     .project_container,
     .contact_container,
     .footer_container{
-      grid-template-columns: repeat(2,1fr);
+      grid-template-columns: repeat(2, 1fr);
 
     }
     .qualification_sections{
@@ -886,7 +887,7 @@ color: var(--first-color-lighter);
 
     }
   }
-  @media screen and (max-width:768px){
+  @media screen and (min-width: 768px){
     .container{
       margin-left: auto;
       margin-right: auto;
