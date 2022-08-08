@@ -467,6 +467,9 @@ img {
   width: 90%;
 }
 .skills_sketch{
+  width: 85%;
+}
+.skills_marvel{
   width: 90%;
 }
 .skills_close .skills_list{
@@ -1028,6 +1031,7 @@ color: var(--first-color-lighter);
   .footer_container {
     padding: 0;
   }
+  
   .home_blob{
     width: 320px;
   }
