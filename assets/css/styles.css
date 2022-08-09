@@ -1063,4 +1063,7 @@ color: var(--first-color-lighter);
   .contact_inputs{
     grid-template-columns:repeat(2, 1fr);
   }
+  .project_img{
+    width: 200px;
+  }
 }
